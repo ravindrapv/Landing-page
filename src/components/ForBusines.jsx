@@ -1,7 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
+import { useForm } from "react-hook-form";
+
 
 export default function ForBusines() {
+    const { register, handleSubmit, formState: { errors } } = useForm();
+    const onSubmit = data => {
+        console.log(data);
+    }
     return (
         <div>
             <section className="min-h-screen bg-white dark:bg-gray-900">
@@ -15,22 +21,30 @@ export default function ForBusines() {
                                 to hear from you
                             </p>
 
-                            <form className="mt-12">
+                            <form className="mt-12" onSubmit={handleSubmit(onSubmit)}>
                                 <div className="flex-1 px-2">
                                     <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Full Name</label>
-                                    <input type="text" placeholder="John Doe" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    <input type="text" id='name' {...register('name', { required: true, maxLength: 30 })} placeholder="John Doe" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    {errors.name && errors.name.type === "required" && <span className=' text-red-600'>This is required</span>}
+                                    {errors.name && errors.name.type === "maxLength" && <span className=' text-red-600'>Max length exceeded</span>}
+
                                 </div>
                                 <div className="flex-1 px-2 mt-4 md:mt-0">
                                     <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email address</label>
-                                    <input type="email" placeholder="johndoe@example.com" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    <input type="email" id='email' {...register("email", { required: true, pattern: /^[A-Z0-9._%+-]+@company\.com$/i })} placeholder="johndoe@example.com" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    {errors.email && errors.email.type === "required" && (<p className=' text-red-600'>enter email</p>)}
+                                    {errors.email && errors.email.type === "pattern" && (<p className=' text-red-600'>enter  email pattern wrong</p>)}
+
                                 </div>
                                 <div className="flex-1 px-2">
-                                    <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Full Name</label>
-                                    <input type="text" placeholder="John Doe" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Company Name</label>
+                                    <input type="text" {...register('CompanyName', { required: true })} placeholder="Geetha tech" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    {errors.CompanyName && errors.CompanyName.type === "required" && (<p className=' text-red-600'>Enter Company Name</p>)}
                                 </div>
                                 <div className="flex-1 px-2">
-                                    <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Full Name</label>
-                                    <input type="text" placeholder="John Doe" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Phone Number</label>
+                                    <input type="number" {...register('number', { required: true })} placeholder="0123456789" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    {errors.number && errors.number.type === "required" && (<p className=' text-red-600'>Enter contact number</p>)}
                                 </div>
 
                                 <div className="w-full mt-2">
@@ -38,14 +52,12 @@ export default function ForBusines() {
                                     <textarea className="block w-full h-16 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Message"></textarea>
                                 </div>
 
-                                <button className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
-                                    get in touch
-                                </button>
+                                <input type="submit" value="get in touch" className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50" />
                             </form>
                         </div>
 
                         <div className="mt-12 lg:flex lg:mt-0 lg:flex-col lg:items-center lg:w-1/2 lg:mx-10">
-                            <img className="hidden object-cover mx-auto rounded-full lg:block shrink-0 w-96 h-96" src="https://images.unsplash.com/photo-1598257006458-087169a1f08d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" />
+                            <img className="hidden object-cover mx-auto rounded-full lg:block shrink-0 w-96 h-96" src="/images/Object1.png" alt="" />
 
                             <div className="mt-6 space-y-8 md:mt-8">
                                 <p className="flex items-start -mx-2">

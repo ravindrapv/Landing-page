@@ -10,7 +10,7 @@ export default function Hero() {
                         <h1 className=" text-xl font-bold leading-none sm:text-6xl">BUILD GREAT
                             TECH TEAMS  FASTER WITH CLIQHR
                         </h1>
-                        <h2 className='py-1 text-xl'>
+                        <h2 className='py-6 text-xl'>
                             A fully automated platform to conduct Exit Interviews with Real-Time analytics.
                         </h2>
                         <div className=' flex gap-8'>

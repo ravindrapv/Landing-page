@@ -3,7 +3,7 @@ import React from 'react'
 export default function FAQ() {
     return (
         <div>
-            <section class="text-gray-700">
+            <section class="text-gray-700 bg-slate-100">
                 <div class="container px-5 py-24 mx-auto">
                     <div class="text-center mb-20">
                         <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
@@ -17,7 +17,7 @@ export default function FAQ() {
                     <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
                         <div class="w-full lg:w-1/2 px-4 py-2">
                             <details class="mb-4">
-                                <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
+                                <summary class="font-semibold  bg-gray-200 rounded-md py-2 p-8">
                                     How Long is this site live?
                                 </summary>
 

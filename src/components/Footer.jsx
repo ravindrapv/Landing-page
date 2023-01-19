@@ -4,7 +4,7 @@ import React from 'react'
 export default function Footer() {
     return (
         <div>
-            <footer className="px-4 divide-y dark:bg-gray-800 dark:text-gray-100 bg-blue-900 text-white">
+            <footer style={{ backgroundImage: `url('/images/footer.png')`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="px-4 divide-y dark:bg-gray-800 dark:text-gray-100 text-white">
                 <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
                     <div className="lg:w-1/3">
                         <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" className="flex items-center p-2 w-60 h-12">
@@ -12,7 +12,7 @@ export default function Footer() {
                         </a>
                     </div>
                     <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
-                        <div className="space-y-3">
+                        <div className="space-y-3 mt-4 sm-mt">
                             <h3 className="tracking-wide uppercase dark:text-gray-50">Product</h3>
                             <ul className="space-y-1">
                                 <li>
@@ -76,6 +76,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
+                {/* <img src="/images/img.svg" alt="" /> */}
                 <div className="py-6 text-sm text-center dark:text-gray-400">© 2023 Geetha Tech solutions. All rights reserved.</div>
             </footer>
         </div>

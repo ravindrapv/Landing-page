@@ -1,5 +1,6 @@
 import { BrowserRouter, Route } from "react-router-dom";
 import About from "./About";
+import ContactUs from "./ContactUs";
 import FAQ from "./FAQ";
 import Footer from "./Footer";
 import Form from "./Form";
@@ -35,6 +36,9 @@ function App() {
         </Route>
         <Route>
           <Form />
+        </Route>
+        <Route>
+          <ContactUs />
         </Route>
         <Route>
           <Footer />
