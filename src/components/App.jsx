@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Route>
+        <Route path='/'>
           <Header />
         </Route>
         <Route>
