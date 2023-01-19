@@ -13,7 +13,7 @@ export default function Form() {
                     </button>
                 </div>
                 <div>
-                    <button className=' btn-3' onClick={(isVisible) => setIsVisible(!isVisible)}>For interviwer
+                    <button className=' btn-3' onClick={(isVisible) => setIsVisible(!isVisible)}>For Interview
                     </button>
                 </div>
             </div>

@@ -14,7 +14,7 @@ export default function Hero() {
                             A fully automated platform to conduct Exit Interviews with Real-Time analytics.
                         </h2>
                         <div className=' flex gap-8'>
-                            <button className='btn'>For interwive</button>
+                            <button className='btn'>For Interview</button>
                             <button className='btn'>For Business</button>
                         </div>
                     </div>
