@@ -4,7 +4,7 @@ export default function WhatService() {
     return (
         <>
             <section>
-                <div class="bg-green-100 py-14">
+                {/* <div class="bg-green-100 py-14">
                     <h3 class="text-2xl tracking-widest text-green-600 text-center">Services we Provide</h3>
                     <h1 class="mt-8 text-center text-5xl text-blue-900 font-bold">How Our Product Works.</h1>
                     <div class="md:flex md:justify-center md:space-x-8 md:px-14">
@@ -43,7 +43,7 @@ export default function WhatService() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <section className="bg-white dark:bg-gray-900 mx-10">
                     <div className="container px-6 py-10 mx-auto">
                         <div className="lg:flex lg:items-center">
