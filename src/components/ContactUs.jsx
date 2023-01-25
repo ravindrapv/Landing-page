@@ -41,28 +41,36 @@ export default function ContactUs() {
     };
     return (
         <div>
+            <div className=' text-center my-8'>
+                <h1 className="text-3xl font-semibold text-blue-900  capitalize lg:text-4xl dark:text-white">Feedback</h1>
+                <div className="mt-2">
+                    <span className="inline-block w-40 h-1 bg-blue-900 rounded-full" />
+                    <span className="inline-block w-3 h-1 ml-1 bg-blue-900 rounded-full" />
+                    <span className="inline-block w-1 h-1 ml-1 bg-blue-900 rounded-full" />
+                </div>
+            </div>
             <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 dark:bg-gray-800 dark:text-gray-100 bg-slate-100">
                 <div className="flex flex-col justify-between">
-                    <div className="space-y-2">
-                        <h2 className="text-4xl font-bold leading-tight lg:text-5xl">We Expect your <br /> Valuable Feedback</h2>
+                    <div className="space-y-2 grid place-content-center">
+                        <h2 className="text-4xl font-bold leading-tight text-blue-900 lg:text-5xl">We Expect your <br /> Valuable Feedback</h2>
                     </div>
                     <img src="assets/svg/doodle.svg" alt="" className="p-6 h-52 md:h-64" />
                 </div>
                 <form onSubmit={handleSubmit} className="container w-full max-w-xl p-8 mx-auto space-y-6 rounded-md shadow dark:bg-gray-900 bg-slate-200">
-                    <h2 className="w-full text-3xl text-center font-bold leading-tight">Feedback</h2>
+
                     <div>
-                        <label for="name" className="block mb-1 ml-1">Name</label>
+                        <label for="name" className="block mb-1 ml-1"></label>
                         <input name="name" type="text" placeholder="Your name" className="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-sky-400 dark:bg-gray-800" onChange={handleChange}
                             required />
                     </div>
                     <div>
-                        <label for="email" className="block mb-1 ml-1">Email</label>
+                        <label for="email" className="block mb-1 ml-1"></label>
                         <input name="email" type="email" placeholder="Your email" onChange={handleChange}
-                            required className="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-sky-400 dark:bg-gray-800" />
+                            required className="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-sky-400 dark:bg-gray-400" />
                     </div>
                     <div>
-                        <label for="message" className="block mb-1 ml-1">Message</label>
-                        <textarea name="message" type="text" placeholder="Message..." className="block w-full p-2 rounded autoexpand focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-sky-400 dark:bg-gray-800" onChange={handleChange}
+                        <label for="message" className="block mb-1 ml-1"></label>
+                        <textarea name="message" type="text" placeholder="Message..." className="h-20 block w-full p-4 rounded autoexpand focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-sky-400 dark:bg-gray-800" onChange={handleChange}
                             required></textarea>
                     </div>
                     <div>

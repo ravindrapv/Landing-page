@@ -2,6 +2,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -54,19 +56,23 @@ table {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+font-family: 'Red Hat Display', sans-serif;
   color: #333;
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
 }
 
-
+.container-1{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 .btn {
   border: none;
   color: #fff;
   background-image: linear-gradient(178deg, #41D3EF 0%, #1F90BB 100%);
-  border-radius: 20px;
+  border-radius: 30px;
   background-size: 100% auto;
   font-family: inherit;
   font-size: 17px;
@@ -207,6 +213,10 @@ letter-spacing: 0px;
   right: 0;
 }
 
+h1,h2{
+font-family: 'Outfit', sans-serif;
+}
+
 h4{
   color: #2B0917;
   text-align: left;
@@ -225,7 +235,7 @@ h4{
   border: 0;
   border-radius: 25px;
   color: var(--secondary-color);
-  padding: 1em 1.8em;
+  padding: 0.8em 1.8em;
   background: linear-gradient(45deg, #F05BA1, #4B4EB3);
   display: flex;
   transition: 0.2s background;
@@ -254,10 +264,20 @@ h4{
   animation: ani 8s linear infinite;
     border: none;
 }
+.hero-text{
+letter-spacing: 0px;
+opacity: 1;
+color: #1C2358;
+font: normal;
+font-family: 'Outfit', sans-serif;
+}
 
+.hero-bg{
+  background: linear-gradient(229deg, #F1FCFE, #F5F7F7FA 100%);
+}
 .hero-img{
-  height: 500px;
-  width: 500px;
+  height: 650px;
+  width: 650px;
 }
 
 .border-left{
@@ -270,6 +290,20 @@ h4{
     border-radius: 10px;
 }
 
+.service-bg{
+  background:#F2F7F8;
+}
+
+.service-text{
+  color: #1C2358;
+}
+
+.bg-w{
+  background-color: #ffff;
+}
+.bg-about{
+  background: linear-gradient(180deg, #0D567F, #00253A); 
+}
 
 @media only screen and (max-width: 600px) {
   body {

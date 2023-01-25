@@ -6,10 +6,8 @@ import Footer from "./Footer";
 import Form from "./Form";
 import Header from "./Header";
 import Hero from "./Hero";
-import Login from "./Login";
 import OurTeam from "./OurTeam";
 import Services from "./Services";
-import WhatService from './WhatService'
 
 function App() {
   return (
@@ -17,32 +15,28 @@ function App() {
       <BrowserRouter>
         <Route path='/'>
           <Header />
-        </Route>
-        <Route>
           <Hero />
         </Route>
-        <Route>
+        <Route path='/'>
           <About />
         </Route>
-        <Route>
+        <Route path='/'>
           <Services />
-          <WhatService />
         </Route>
-        <Route>
+        <Route path='/'>
           <OurTeam />
         </Route>
-        <Route>
+        <Route path='/'>
           <FAQ />
         </Route>
-        <Route>
+        <Route path='/'>
           <Form />
         </Route>
-        <Route>
+        <Route path='/'>
           <ContactUs />
         </Route>
-        <Route>
+        <Route path='/'>
           <Footer />
-          <Login />
         </Route>
       </BrowserRouter>
     </>

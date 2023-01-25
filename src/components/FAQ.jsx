@@ -1,9 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
+import React from "react";
+import PropTypes from "prop-types";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -34,10 +34,9 @@ TabPanel.propTypes = {
 function a11yProps(index) {
     return {
         id: `simple-tab-${index}`,
-        'aria-controls': `simple-tabpanel-${index}`,
+        "aria-controls": `simple-tabpanel-${index}`,
     };
 }
-
 
 export default function FAQ() {
     const [value, setValue] = React.useState(0);
@@ -50,22 +49,24 @@ export default function FAQ() {
         <div>
             <section className="text-gray-700">
                 <div className="container px-5 py-24 mx-auto">
-                    <div className="text-center mb-20">
-                        <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
-                            Frequently Asked Question
-                        </h1>
-                        <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-                            The most common questions about how our business works and what
-                            can do for you.
-                        </p>
+                    <div className=' text-center my-8'>
+                        <h1 className="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white"> Frequently Asked Question</h1>
+                        <div className="mt-2">
+                            <span className="inline-block w-40 h-1 bg-blue-500 rounded-full" />
+                            <span className="inline-block w-3 h-1 ml-1 bg-blue-500 rounded-full" />
+                            <span className="inline-block w-1 h-1 ml-1 bg-blue-500 rounded-full" />
+                        </div>
                     </div>
                     <div>
-                        <Box sx={{ width: '100%' }}>
-                            <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                                <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-                                    <Tab label="Client FAQs" {...a11yProps(0)} />
-                                    <Tab label="candidate FAQs" {...a11yProps(1)} />
-                                    <Tab label="Help center" {...a11yProps(2)} />
+                        <Box sx={{ width: "100%" }}>
+                            <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+                                <Tabs
+                                    value={value}
+                                    onChange={handleChange}
+                                    aria-label="basic tabs example"
+                                >
+                                    <Tab label="Client FAQs" {...a11yProps(0)} sx={{ fontWeight: 'bold', textTransform: 'capitalize', color: '#1E3A8A' }} />
+                                    <Tab label="candidate FAQs" {...a11yProps(1)} sx={{ fontWeight: 'bold', textTransform: 'capitalize', color: '#1E3A8A' }} />
                                 </Tabs>
                             </Box>
                             <TabPanel value={value} index={0}>
@@ -75,7 +76,7 @@ export default function FAQ() {
                                         open=""
                                     >
                                         <summary className="flex items-center justify-between cursor-pointer">
-                                            <h2 className="text-2xl font-semibold  text-blue-900">
+                                            <h2 className="text-xl font-semibold  text-blue-900">
                                                 What payment method do you offer?
                                             </h2>
                                             <span className="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
@@ -94,15 +95,16 @@ export default function FAQ() {
                                             </span>
                                         </summary>
                                         <p className="mt-4 leading-relaxed text-gray-700">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                                            molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                                            voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                                            earum similique!
+                                            By and large, credit cards are easily the most secure and
+                                            safe payment method to use when you shop online. Credit
+                                            cards use online security features like encryption and
+                                            fraud monitoring to keep your accounts and personal
+                                            information safe
                                         </p>
                                     </details>
                                     <details className="border-left shadow-xl p-6 [&_summary::-webkit-details-marker]:hidden">
                                         <summary className="flex items-center justify-between cursor-pointer">
-                                            <h2 className="text-lg font-medium text-gray-900">
+                                            <h2 className="text-xl font-semibold  text-blue-900">
                                                 What is a custom test?
                                             </h2>
                                             <span className="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
@@ -121,15 +123,16 @@ export default function FAQ() {
                                             </span>
                                         </summary>
                                         <p className="mt-4 leading-relaxed text-gray-700">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                                            molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                                            voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                                            earum similique!
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Ab hic veritatis molestias culpa in, recusandae laboriosam
+                                            neque aliquid libero nesciunt voluptate dicta quo officiis
+                                            explicabo consequuntur distinctio corporis earum
+                                            similique!
                                         </p>
                                     </details>
                                     <details className="border-left shadow-xl p-6 [&_summary::-webkit-details-marker]:hidden">
                                         <summary className="flex items-center justify-between cursor-pointer">
-                                            <h2 className="text-lg font-medium text-gray-900">
+                                            <h2 className="text-xl font-semibold  text-blue-900">
                                                 Do you provide role-based access control?
                                             </h2>
                                             <span className="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
@@ -148,15 +151,16 @@ export default function FAQ() {
                                             </span>
                                         </summary>
                                         <p className="mt-4 leading-relaxed text-gray-700">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                                            molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                                            voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                                            earum similique!
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Ab hic veritatis molestias culpa in, recusandae laboriosam
+                                            neque aliquid libero nesciunt voluptate dicta quo officiis
+                                            explicabo consequuntur distinctio corporis earum
+                                            similique!
                                         </p>
                                     </details>
                                     <details className="border-left shadow-xl p-6 [&_summary::-webkit-details-marker]:hidden">
                                         <summary className="flex items-center justify-between cursor-pointer">
-                                            <h2 className="text-lg font-medium text-gray-900">
+                                            <h2 className="text-xl font-semibold  text-blue-900">
                                                 Is my data safe?
                                             </h2>
                                             <span className="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
@@ -175,10 +179,11 @@ export default function FAQ() {
                                             </span>
                                         </summary>
                                         <p className="mt-4 leading-relaxed text-gray-700">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                                            molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                                            voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                                            earum similique!
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Ab hic veritatis molestias culpa in, recusandae laboriosam
+                                            neque aliquid libero nesciunt voluptate dicta quo officiis
+                                            explicabo consequuntur distinctio corporis earum
+                                            similique!
                                         </p>
                                     </details>
                                 </div>
@@ -190,7 +195,7 @@ export default function FAQ() {
                                         open=""
                                     >
                                         <summary className="flex items-center justify-between cursor-pointer">
-                                            <h2 className="text-2xl font-semibold  text-blue-900">
+                                            <h2 className="text-xl font-semibold  text-blue-900">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing?
                                             </h2>
                                             <span className="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
@@ -209,15 +214,16 @@ export default function FAQ() {
                                             </span>
                                         </summary>
                                         <p className="mt-4 leading-relaxed text-gray-700">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                                            molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                                            voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                                            earum similique!
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Ab hic veritatis molestias culpa in, recusandae laboriosam
+                                            neque aliquid libero nesciunt voluptate dicta quo officiis
+                                            explicabo consequuntur distinctio corporis earum
+                                            similique!
                                         </p>
                                     </details>
                                     <details className="border-left-2 shadow-xl p-6 [&_summary::-webkit-details-marker]:hidden">
                                         <summary className="flex items-center justify-between cursor-pointer">
-                                            <h2 className="text-lg font-medium text-gray-900">
+                                            <h2 className="text-xl font-semibold  text-blue-900">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing?
                                             </h2>
                                             <span className="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
@@ -236,15 +242,16 @@ export default function FAQ() {
                                             </span>
                                         </summary>
                                         <p className="mt-4 leading-relaxed text-gray-700">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                                            molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                                            voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                                            earum similique!
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Ab hic veritatis molestias culpa in, recusandae laboriosam
+                                            neque aliquid libero nesciunt voluptate dicta quo officiis
+                                            explicabo consequuntur distinctio corporis earum
+                                            similique!
                                         </p>
                                     </details>
                                     <details className="border-left-2 shadow-xl p-6 [&_summary::-webkit-details-marker]:hidden">
                                         <summary className="flex items-center justify-between cursor-pointer">
-                                            <h2 className="text-lg font-medium text-gray-900">
+                                            <h2 className="text-xl font-semibold  text-blue-900">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing?
                                             </h2>
                                             <span className="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
@@ -263,15 +270,16 @@ export default function FAQ() {
                                             </span>
                                         </summary>
                                         <p className="mt-4 leading-relaxed text-gray-700">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                                            molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                                            voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                                            earum similique!
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Ab hic veritatis molestias culpa in, recusandae laboriosam
+                                            neque aliquid libero nesciunt voluptate dicta quo officiis
+                                            explicabo consequuntur distinctio corporis earum
+                                            similique!
                                         </p>
                                     </details>
                                     <details className="border-left-2 shadow-xl p-6 [&_summary::-webkit-details-marker]:hidden">
                                         <summary className="flex items-center justify-between cursor-pointer">
-                                            <h2 className="text-lg font-medium text-gray-900">
+                                            <h2 className="text-xl font-semibold  text-blue-900">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing?
                                             </h2>
                                             <span className="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
@@ -290,176 +298,11 @@ export default function FAQ() {
                                             </span>
                                         </summary>
                                         <p className="mt-4 leading-relaxed text-gray-700">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                                            molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                                            voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                                            earum similique!
-                                        </p>
-                                    </details>
-                                </div>
-                            </TabPanel>
-                            <TabPanel value={value} index={2}>
-                                <div className="space-y-4">
-                                    <details className="group [&_summary::-webkit-details-marker]:hidden" open="">
-                                        <summary className="flex items-center justify-between p-4 rounded-lg cursor-pointer shadow-xl">
-                                            <h2 className="font-medium text-gray-900">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing?
-                                            </h2>
-                                            <svg
-                                                className="ml-1.5 h-5 w-5 flex-shrink-0 transition duration-300 group-open:-rotate-180"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                fill="none"
-                                                viewBox="0 0 24 24"
-                                                stroke="currentColor"
-                                            >
-                                                <path
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    strokeWidth={2}
-                                                    d="M19 9l-7 7-7-7"
-                                                />
-                                            </svg>
-                                        </summary>
-                                        <p className="px-4 mt-4 leading-relaxed text-gray-700">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                                            molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                                            voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                                            earum similique!
-                                        </p>
-                                    </details>
-                                    <details className="group [&_summary::-webkit-details-marker]:hidden">
-                                        <summary className="flex items-center justify-between p-4 rounded-lg cursor-pointer shadow-xl">
-                                            <h2 className="font-medium text-gray-900">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing?
-                                            </h2>
-                                            <svg
-                                                className="ml-1.5 h-5 w-5 flex-shrink-0 transition duration-300 group-open:-rotate-180"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                fill="none"
-                                                viewBox="0 0 24 24"
-                                                stroke="currentColor"
-                                            >
-                                                <path
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    strokeWidth={2}
-                                                    d="M19 9l-7 7-7-7"
-                                                />
-                                            </svg>
-                                        </summary>
-                                        <p className="px-4 mt-4 leading-relaxed text-gray-700">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                                            molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                                            voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                                            earum similique!
-                                        </p>
-                                    </details>
-                                    <details className="group [&_summary::-webkit-details-marker]:hidden">
-                                        <summary className="flex items-center justify-between p-4 rounded-lg cursor-pointer shadow-xl">
-                                            <h2 className="font-medium text-gray-900">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing?
-                                            </h2>
-                                            <svg
-                                                className="ml-1.5 h-5 w-5 flex-shrink-0 transition duration-300 group-open:-rotate-180"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                fill="none"
-                                                viewBox="0 0 24 24"
-                                                stroke="currentColor"
-                                            >
-                                                <path
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    strokeWidth={2}
-                                                    d="M19 9l-7 7-7-7"
-                                                />
-                                            </svg>
-                                        </summary>
-                                        <p className="px-4 mt-4 leading-relaxed text-gray-700">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                                            molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                                            voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                                            earum similique!
-                                        </p>
-                                    </details>
-                                    <details className="group [&_summary::-webkit-details-marker]:hidden">
-                                        <summary className="flex items-center justify-between p-4 rounded-lg cursor-pointer shadow-xl">
-                                            <h2 className="font-medium text-gray-900">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing?
-                                            </h2>
-                                            <svg
-                                                className="ml-1.5 h-5 w-5 flex-shrink-0 transition duration-300 group-open:-rotate-180"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                fill="none"
-                                                viewBox="0 0 24 24"
-                                                stroke="currentColor"
-                                            >
-                                                <path
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    strokeWidth={2}
-                                                    d="M19 9l-7 7-7-7"
-                                                />
-                                            </svg>
-                                        </summary>
-                                        <p className="px-4 mt-4 leading-relaxed text-gray-700">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                                            molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                                            voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                                            earum similique!
-                                        </p>
-                                    </details>
-                                    <details className="group [&_summary::-webkit-details-marker]:hidden">
-                                        <summary className="flex items-center justify-between p-4 rounded-lg cursor-pointer shadow-xl">
-                                            <h2 className="font-medium text-gray-900">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing?
-                                            </h2>
-                                            <svg
-                                                className="ml-1.5 h-5 w-5 flex-shrink-0 transition duration-300 group-open:-rotate-180"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                fill="none"
-                                                viewBox="0 0 24 24"
-                                                stroke="currentColor"
-                                            >
-                                                <path
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    strokeWidth={2}
-                                                    d="M19 9l-7 7-7-7"
-                                                />
-                                            </svg>
-                                        </summary>
-                                        <p className="px-4 mt-4 leading-relaxed text-gray-700">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                                            molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                                            voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                                            earum similique!
-                                        </p>
-                                    </details>
-                                    <details className="group [&_summary::-webkit-details-marker]:hidden">
-                                        <summary className="flex items-center justify-between p-4 rounded-lg cursor-pointer shadow-xl">
-                                            <h2 className="font-medium text-gray-900">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing?
-                                            </h2>
-                                            <svg
-                                                className="ml-1.5 h-5 w-5 flex-shrink-0 transition duration-300 group-open:-rotate-180"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                fill="none"
-                                                viewBox="0 0 24 24"
-                                                stroke="currentColor"
-                                            >
-                                                <path
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    strokeWidth={2}
-                                                    d="M19 9l-7 7-7-7"
-                                                />
-                                            </svg>
-                                        </summary>
-                                        <p className="px-4 mt-4 leading-relaxed text-gray-700">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                                            molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                                            voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                                            earum similique!
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Ab hic veritatis molestias culpa in, recusandae laboriosam
+                                            neque aliquid libero nesciunt voluptate dicta quo officiis
+                                            explicabo consequuntur distinctio corporis earum
+                                            similique!
                                         </p>
                                     </details>
                                 </div>
@@ -469,5 +312,5 @@ export default function FAQ() {
                 </div>
             </section>
         </div>
-    )
+    );
 }

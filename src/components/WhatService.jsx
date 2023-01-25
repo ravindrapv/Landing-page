@@ -57,7 +57,7 @@ export default function WhatService() {
                                     </div>
                                 </div>
                                 <div className="md:flex md:items-start md:-mx-4">
-                                    <span className="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
+                                    <span className="inline-block p-2 text-blue-500 bg-green-100 rounded-xl md:mx-4 dark:text-white ">
                                         <img src="/images/Group 490.svg" alt="" />
                                     </span>
                                     <div className="mt-4 md:mx-4 md:mt-0">
@@ -68,7 +68,7 @@ export default function WhatService() {
                                     </div>
                                 </div>
                                 <div className="md:flex md:items-start md:-mx-4">
-                                    <span className="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
+                                    <span className="inline-block p-2 text-blue-500 bg-green-100 rounded-xl md:mx-4 dark:text-white ">
                                         <img src="/images/Group 491.svg" alt="" />
                                     </span>
                                     <div className="mt-4 md:mx-4 md:mt-0">
@@ -79,7 +79,7 @@ export default function WhatService() {
                                     </div>
                                 </div>
                                 <div className="md:flex md:items-start md:-mx-4">
-                                    <span className="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
+                                    <span className="inline-block p-2 text-blue-500 bg-green-100 rounded-xl md:mx-4 dark:text-white ">
                                         <img src="/images/Group 492.svg" alt="" />
                                     </span>
                                     <div className="mt-4 md:mx-4 md:mt-0">
@@ -90,7 +90,7 @@ export default function WhatService() {
                                     </div>
                                 </div>
                                 <div className="md:flex md:items-start md:-mx-4">
-                                    <span className="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
+                                    <span className="inline-block p-2 text-blue-500 bg-green-100 rounded-xl md:mx-4 dark:text-white">
                                         <img src="/images/Group 493.svg" alt="" />
                                     </span>
                                     <div className="mt-4 md:mx-4 md:mt-0">

@@ -14,7 +14,7 @@ export default function ForInterviwer() {
                 <div className="container px-6 py-10 mx-auto">
                     <div className="lg:flex lg:items-center lg:-mx-10">
                         <div className="lg:w-1/2 lg:mx-10">
-                            <h1 className="text-3xl font-semibold text-gray-800 capitalize dark:text-white lg:text-4xl">Let’s talk about Busines</h1>
+                            <h1 className="text-3xl font-semibold text-gray-800 capitalize dark:text-white lg:text-4xl">Let’s talk about Interviwer</h1>
 
                             <p className="mt-4 text-gray-500 dark:text-gray-400">
                                 Ask us everything and we would love
@@ -52,12 +52,12 @@ export default function ForInterviwer() {
                                     <textarea className="block w-full h-16 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Message"></textarea>
                                 </div>
 
-                                <input type="submit" value="get in touch" className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50" />
+                                <input type="submit" value="get in touch" className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-orange-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50" />
                             </form>
                         </div>
 
                         <div className="mt-12 lg:flex lg:mt-0 lg:flex-col lg:items-center lg:w-1/2 lg:mx-10">
-                            <img className="hidden object-cover mx-auto rounded-full lg:block shrink-0 w-96 h-96" src="/images/Object1.png" alt="" />
+                            <img className="hidden object-cover mx-auto  lg:block shrink-0 w-3/4 h-3/4" src="/images/Object1.png" alt="" />
 
                             <div className="mt-6 space-y-8 md:mt-8">
                                 <p className="flex items-start -mx-2">
