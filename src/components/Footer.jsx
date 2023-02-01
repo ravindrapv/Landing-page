@@ -4,7 +4,7 @@ import React from 'react'
 export default function Footer() {
     return (
         <div>
-            <footer style={{ backgroundImage: `url('/images/footer.png')`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="px-4 divide-y dark:bg-gray-800 dark:text-gray-100 text-white">
+            <footer style={{ backgroundImage: `url('/images/wave (1).svg')`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="px-4 divide-y dark:bg-gray-800 dark:text-gray-100 text-white" id='footer'>
                 <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
                     <div className="lg:w-1/3">
                         <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" className="flex items-center p-2 w-60 h-12">
@@ -73,7 +73,14 @@ export default function Footer() {
                                     </svg>
                                 </a>
                             </div>
+                            <div className="flex flex-row items-center self-center justify-center flex-shrink-0 shadow-md lg:justify-end">
+                                <div className="flex flex-row">
+                                    <input type="text" placeholder="example@email.com" className="w-3/5 p-3 rounded-l-lg sm:w-2/3" />
+                                    <button type="button" className="w-2/5 p-3 font-semibold rounded-r-lg sm:w-1/3 bg-orange-600">Subscribe</button>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
                 {/* <img src="/images/img.svg" alt="" /> */}

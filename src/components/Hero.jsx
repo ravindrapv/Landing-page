@@ -5,16 +5,17 @@ export default function Hero() {
     return (
         <div>
             <section className="dark:bg-gray-800 dark:text-gray-100 hero-bg">
-                <div className="container flex flex-col justify-center p-4 mx-auto sm:py-12 lg:py-4 lg:flex-row lg:justify-evenly">
+                <div className="container flex flex-col justify-center p-2 mx-auto sm:py-12 lg:py-2 lg:flex-row lg:justify-evenly">
                     <div className="flex flex-col justify-center text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-                        <h1 className=" text-xl font-extrabold leading-none sm:text-6xl text-blue-900 hero-text font-sans">BUILD GREAT
-                            TECH TEAMS  FASTER WITH CLIQHR
+                        <h1 className=" text-xl font-extrabold leading-none sm:text-6xl text-blue-400 hero-text font-sans">BUILD GREAT
+                            TECH <span className=' text-orange-500'>TEAMS</span> FASTER WITH <span className=' text-pink-500'>CLIQHR</span>
                         </h1>
                         <h2 className='py-6 text-xl'>
                             A fully automated platform to conduct <br /> Exit Interviews with Real-Time analytics.
                         </h2>
                         <div className=' flex gap-8'>
-                            <button className='btn'>Request Demo</button>
+                            <button className='btn-1'>Request Demo</button>
+                            <button className='btn-4'>Become an Interviewer</button>
                         </div>
                     </div>
                     <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 sm:h-full lg:h-96 xl:h-112 2xl:h-128 h-full w-6/12 hero-img">

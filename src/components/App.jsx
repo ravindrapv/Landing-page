@@ -1,4 +1,4 @@
-import { BrowserRouter, Route } from "react-router-dom";
+
 import About from "./About";
 import ContactUs from "./ContactUs";
 import FAQ from "./FAQ";
@@ -7,38 +7,24 @@ import Form from "./Form";
 import Header from "./Header";
 import Hero from "./Hero";
 import OurTeam from "./OurTeam";
+import RemoteTech from "./RemoteTech";
 import Services from "./Services";
+import Steps from "./Steps";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Route path='/'>
-          <Header />
-          <Hero />
-        </Route>
-        <Route path='/'>
-          <About />
-        </Route>
-        <Route path='/'>
-          <Services />
-        </Route>
-        <Route path='/'>
-          <OurTeam />
-        </Route>
-        <Route path='/'>
-          <FAQ />
-        </Route>
-        <Route path='/'>
-          <Form />
-        </Route>
-        <Route path='/'>
-          <ContactUs />
-        </Route>
-        <Route path='/'>
-          <Footer />
-        </Route>
-      </BrowserRouter>
+      <Header />
+      <Hero />
+      <About />
+      <Services />
+      <Steps />
+      <RemoteTech />
+      <OurTeam />
+      <FAQ />
+      <Form />
+      <ContactUs />
+      <Footer />
     </>
   );
 }

@@ -47,14 +47,14 @@ export default function FAQ() {
 
     return (
         <div>
-            <section className="text-gray-700">
-                <div className="container px-5 py-24 mx-auto">
+            <section className="text-gray-700" id="FAQ">
+                <div className="container px-5 py-4 mx-auto">
                     <div className=' text-center my-8'>
-                        <h1 className="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white"> Frequently Asked Question</h1>
+                        <h1 className="text-3xl font-semibold text-blue-900 capitalize lg:text-4xl dark:text-white"> Frequently Asked Question</h1>
                         <div className="mt-2">
-                            <span className="inline-block w-40 h-1 bg-blue-500 rounded-full" />
-                            <span className="inline-block w-3 h-1 ml-1 bg-blue-500 rounded-full" />
-                            <span className="inline-block w-1 h-1 ml-1 bg-blue-500 rounded-full" />
+                            <span className="inline-block w-40 h-1 bg-blue-900 rounded-full" />
+                            <span className="inline-block w-3 h-1 ml-1 bg-blue-900 rounded-full" />
+                            <span className="inline-block w-1 h-1 ml-1 bg-blue-900 rounded-full" />
                         </div>
                     </div>
                     <div>

@@ -68,7 +68,7 @@ font-family: 'Red Hat Display', sans-serif;
   margin: 0 auto;
   padding: 0 15px;
 }
-.btn {
+.btn-1 {
   border: none;
   color: #fff;
   background-image: linear-gradient(178deg, #41D3EF 0%, #1F90BB 100%);
@@ -76,10 +76,28 @@ font-family: 'Red Hat Display', sans-serif;
   background-size: 100% auto;
   font-family: inherit;
   font-size: 17px;
-  padding: 0.6em 1.5em;
+  padding: 0.4em 1.5em;
 }
 
-.btn:hover {
+.btn-1:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+}
+
+.btn-4 {
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(100deg,#FF771B,#ff5da1, #344CB6 100%);
+  border-radius: 30px;
+  background-size: 100% auto;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 0.4em 1.5em;
+}
+
+.btn-4:hover {
   background-position: right center;
   background-size: 200% auto;
   -webkit-animation: pulse 2s infinite;
@@ -157,7 +175,7 @@ letter-spacing: 0px;
   --secondary-color: #fff;
   --hover-color: #111;
   --arrow-width: 10px;
-  --arrow-stroke: 2px;
+  --arrow-stroke: 4px;
   box-sizing: border-box;
   border: 0;
   border-radius: 20px;
@@ -230,7 +248,7 @@ h4{
   --secondary-color: #fff;
   --hover-color: #111;
   --arrow-width: 10px;
-  --arrow-stroke: 2px;
+  --arrow-stroke: 4px;
   box-sizing: border-box;
   border: 0;
   border-radius: 25px;
@@ -302,7 +320,101 @@ font-family: 'Outfit', sans-serif;
   background-color: #ffff;
 }
 .bg-about{
-  background: linear-gradient(180deg, #0D567F, #00253A); 
+  background: #1C2358; 
+}
+.bg-clr{
+  color:#F6762A;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.info-content {
+  background-color: rgb(54, 42, 70);
+  color: white;
+  height: 80vh;
+}
+
+.container-2 {
+  max-width: 300px;
+  margin: 0rem auto;
+  padding: 2rem;
+  position: relative;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  line-height: 80px;
+  border-radius: 50%;
+}
+
+.flex-2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.c1 {
+  border: 4px solid blue;
+}
+
+.c2 {
+  position: absolute;
+  top: 6rem;
+  border: 4px solid pink;
+}
+
+.c3 {
+  position: absolute;
+  top: 10rem;
+  border: 4px solid green;
+}
+
+.c4 {
+  position: absolute;
+  top: 14rem;
+  border: 4px solid yellow;
+}
+
+.c5 {
+  position: absolute;
+  top: 18rem;
+  border: 4px solid cyan;
+}
+
+.c6 {
+  position: absolute;
+  top: 22rem;
+  border: 4px solid orange;
+}
+.mr{
+  margin-right: 10px;
+}
+/* RESPONSİVE */
+
+@media only screen and (max-width: 800px) {
+
+  .flexcard {
+    width: 35%;
+    margin-top: 20px;
+  }
+
+  img.flexcardimgItem {
+    width: 30%;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+  .flexcard {
+    width: 70%;
+  }
+
+
 }
 
 @media only screen and (max-width: 600px) {

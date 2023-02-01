@@ -2,7 +2,7 @@
 import React from 'react'
 export default function Services() {
   return (
-    <div className=' flex justify-center items-center service-bg'>
+    <div className=' flex justify-center items-center service-bg mx-8' id='Services'>
       <div className="py-16  from-green-50 to-cyan-100">
         <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
           <div className="mb-12 space-y-2 text-center">
@@ -16,19 +16,19 @@ export default function Services() {
           </div>
           <div className="grid gap-12 lg:grid-cols-2">
             <div className="rounded-xl group sm:flex space-x-6 bg-w bg-opacity-50 shadow-xl hover:rounded-2xl p-4">
-              <img src="/images/forInt.png" alt="art cover" loading="lazy" height="300" className=" h-56 object-top rounded-lg transition duration-500 group-hover:rounded-xl" />
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEbBRIqR4nd6YbxkJ6tiFISRboXPAePsW06X1sxx5ssCjZUHMyXAQ2Y8ArsSlwOs6Jpls&usqp=CAU" alt="art cover" loading="lazy" height="250" width='250' className=" h-56 object-top rounded-lg transition duration-500 group-hover:rounded-xl" />
               <div className="sm:w-7/12 pl-0 p-5">
                 <div className="space-y-2">
                   <div className="space-y-4">
                     <h4 className="text-2xl font-semibold text-cyan-900">For Business</h4>
                     <p className="text-gray-600">Acquiring talent is not easy! We are glad to share a different tale here. With the right bandwidth of interviewers across multiple skills, finding your ideal candidate becomes easier and faster.</p>
                   </div>
-                  <button className='btn'>For Business</button>
+                  <button className='btn-1'>For Business</button>
                 </div>
               </div>
             </div>
             <div className="p-4 rounded-xl group sm:flex space-x-6 bg-w bg-opacity-50 shadow-xl hover:rounded-2xl">
-              <img src="/images/forB.png" alt="art cover" loading="lazy" height="300" className="h-56 rounded-lg transition duration-500 group-hover:rounded-xl" />
+              <img src="https://www.aihr.com/wp-content/uploads/Interview-guide.jpg" alt="art cover" loading="lazy" height="250" width='250' className="h-56 rounded-lg transition duration-500 group-hover:rounded-xl" />
               <div className="sm:w-7/12 pl-0 p-5">
                 <div className="space-y-2">
                   <div className="space-y-4">
@@ -37,7 +37,7 @@ export default function Services() {
                       Earn a knowledge and money. Come join us, build a identity for yourself.
                       Earn a knowledge and money. Come join us, build a identity for yourself</p>
                   </div>
-                  <button className='btn'>For Interviewer</button>
+                  <button className='btn-1'>For Interviewer</button>
                 </div>
               </div>
             </div>

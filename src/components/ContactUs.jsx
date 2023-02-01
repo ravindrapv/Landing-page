@@ -64,8 +64,13 @@ export default function ContactUs() {
                             required />
                     </div>
                     <div>
-                        <label for="email" className="block mb-1 ml-1"></label>
+                        <label for="company" className="block mb-1 ml-1"></label>
                         <input name="email" type="email" placeholder="Your email" onChange={handleChange}
+                            required className="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-sky-400 dark:bg-gray-400" />
+                    </div>
+                    <div>
+                        <label for="email" className="block mb-1 ml-1"></label>
+                        <input name="email" type="email" placeholder="Enter company" onChange={handleChange}
                             required className="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-sky-400 dark:bg-gray-400" />
                     </div>
                     <div>
