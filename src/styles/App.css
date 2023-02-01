@@ -104,6 +104,23 @@ font-family: 'Red Hat Display', sans-serif;
   animation: pulse512 1.5s infinite;
 }
 
+.btn-5 {
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(100deg, #FF771B, #ff5da1, #344CB6 100%);
+  background-size: 100% auto;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 0.4em 1.5em;
+}
+
+.btn-5:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+}
+
 @keyframes pulse512 {
   0% {
     box-shadow: 0 0 0 0 #05bada66;
