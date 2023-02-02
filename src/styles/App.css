@@ -315,6 +315,15 @@ font-family: 'Outfit', sans-serif;
   width: 650px;
 }
 
+.hero-sub{
+  background: -webkit-linear-gradient(90deg,
+    #FF771B,
+    #ff5da1,
+    #344CB6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .border-left{
   border-left: 4px solid #F05AA0;
   border-radius: 10px;
@@ -355,7 +364,7 @@ font-family: 'Outfit', sans-serif;
 }
 
 .container-2 {
-  max-width: 300px;
+  max-width:100%;
   margin: 0rem auto;
   padding: 2rem;
   position: relative;

@@ -88,7 +88,7 @@ export default function ForInterviwer() {
                                 </p>
                             </div>
 
-                            <div className="mt-6 w-80 md:mt-8">
+                            {/* <div className="mt-6 w-80 md:mt-8">
                                 <h3 className="text-gray-600 dark:text-gray-300 ">Follow us</h3>
 
                                 <div className="flex mt-4 -mx-1.5 ">
@@ -106,7 +106,7 @@ export default function ForInterviwer() {
                                         </svg>
                                     </a>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

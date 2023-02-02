@@ -1,4 +1,3 @@
-
 import About from "./About";
 import ContactUs from "./ContactUs";
 import FAQ from "./FAQ";
@@ -10,7 +9,8 @@ import OurTeam from "./OurTeam";
 import RemoteTech from "./RemoteTech";
 import Services from "./Services";
 import Steps from "./Steps";
-
+import Blogs from "./Blogs";
+import Testimonials from "./Testimonials";
 function App() {
   return (
     <>
@@ -19,7 +19,9 @@ function App() {
       <About />
       <Services />
       <Steps />
+      <Testimonials />
       <RemoteTech />
+      <Blogs />
       <OurTeam />
       <FAQ />
       <Form />

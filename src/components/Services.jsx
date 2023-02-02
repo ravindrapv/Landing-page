@@ -37,7 +37,7 @@ export default function Services() {
                       Earn a knowledge and money. Come join us, build a identity for yourself.
                       Earn a knowledge and money. Come join us, build a identity for yourself</p>
                   </div>
-                  <button className='btn-1'>For Interviewer</button>
+                  <button className='btn-4'>For Interviewer</button>
                 </div>
               </div>
             </div>

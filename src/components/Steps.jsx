@@ -3,48 +3,190 @@ import React from 'react'
 
 export default function Steps() {
     return (
-        <section className="content" id='Steps'>
-            <div className="mb-12 space-y-2 text-center mt-12">
-                <h2 className="text-2xl text-sky-400 md:text-4xl text-center">OUR DESIGN PROCESS</h2>
+        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+            <div className="mb-12 space-y-2 text-center">
+                <h2 className="text-2xl text-orange-500 md:text-4xl text-center">Process Flow</h2>
                 <div className="mt-2">
-                    <span className="inline-block w-40 h-1 bg-sky-400 rounded-full" />
-                    <span className="inline-block w-3 h-1 ml-1 bg-sky-400 rounded-full" />
-                    <span className="inline-block w-1 h-1 ml-1 bg-sky-400 rounded-full" />
+                    <span className="inline-block w-40 h-1 bg-orange-500 rounded-full" />
+                    <span className="inline-block w-3 h-1 ml-1 bg-orange-500 rounded-full" />
+                    <span className="inline-block w-1 h-1 ml-1 bg-orange-500 rounded-full" />
+                </div>
+                <p className=" lg:w-9/12 lg:mx-auto font-bold text-3xl my-14 service-text">Ease the job application process and let you meet the best candidates in the shortest time</p>
+            </div>
+            <div className="grid max-w-screen-lg mx-auto space-y-6 lg:grid-cols-2 lg:space-y-0 lg:divide-x">
+                <div className="space-y-6 sm:px-16">
+                    <div className="flex flex-col max-w-md sm:flex-row">
+                        <div className="mb-4 mr-4">
+                            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
+                                <svg
+                                    className="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10"
+                                    stroke="currentColor"
+                                    viewBox="0 0 52 52"
+                                >
+                                    <polygon
+                                        strokeWidth="3"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        fill="none"
+                                        points="29 13 14 29 25 29 23 39 38 23 27 23"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h6 className="mb-3 text-xl font-bold leading-5">
+                                The deep ocean
+                            </h6>
+                            <p className="text-sm text-gray-900">
+                                Webtwo ipsum orkut reddit meebo orangep5 vimeo jajah spock empressr
+                                zimbra, mobly napster.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col max-w-md sm:flex-row">
+                        <div className="mb-4 mr-4">
+                            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
+                                <svg
+                                    className="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10"
+                                    stroke="currentColor"
+                                    viewBox="0 0 52 52"
+                                >
+                                    <polygon
+                                        strokeWidth="3"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        fill="none"
+                                        points="29 13 14 29 25 29 23 39 38 23 27 23"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h6 className="mb-3 text-xl font-bold leading-5">
+                                When has justice
+                            </h6>
+                            <p className="text-sm text-gray-900">
+                                Lookout flogging bilge rat main sheet bilge water nipper fluke
+                                to go on account heave down clap of thunder.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col max-w-md sm:flex-row">
+                        <div className="mb-4 mr-4">
+                            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
+                                <svg
+                                    className="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10"
+                                    stroke="currentColor"
+                                    viewBox="0 0 52 52"
+                                >
+                                    <polygon
+                                        strokeWidth="3"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        fill="none"
+                                        points="29 13 14 29 25 29 23 39 38 23 27 23"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h6 className="mb-3 text-xl font-bold leading-5">
+                                Leverage agile
+                            </h6>
+                            <p className="text-sm text-gray-900">
+                                The first mate and his Skipper too will do their very best to
+                                make the others comfortable.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="space-y-6 sm:px-16">
+                    <div className="flex flex-col max-w-md sm:flex-row">
+                        <div className="mb-4 mr-4">
+                            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
+                                <svg
+                                    className="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10"
+                                    stroke="currentColor"
+                                    viewBox="0 0 52 52"
+                                >
+                                    <polygon
+                                        strokeWidth="3"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        fill="none"
+                                        points="29 13 14 29 25 29 23 39 38 23 27 23"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h6 className="mb-3 text-xl font-bold leading-5">
+                                Organically grow
+                            </h6>
+                            <p className="text-sm text-gray-900">
+                                Skate ipsum dolor sit amet, alley oop vert mute-air Colby Carter
+                                flail 180 berm over the sea.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col max-w-md sm:flex-row">
+                        <div className="mb-4 mr-4">
+                            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
+                                <svg
+                                    className="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10"
+                                    stroke="currentColor"
+                                    viewBox="0 0 52 52"
+                                >
+                                    <polygon
+                                        strokeWidth="3"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        fill="none"
+                                        points="29 13 14 29 25 29 23 39 38 23 27 23"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h6 className="mb-3 text-xl font-bold leading-5">
+                                Have a good one
+                            </h6>
+                            <p className="text-sm text-gray-900">
+                                Cheese on toast airedale the big cheese. Danish fontina cheesy
+                                grin airedale danish fontina.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col max-w-md sm:flex-row">
+                        <div className="mb-4 mr-4">
+                            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
+                                <svg
+                                    className="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10"
+                                    stroke="currentColor"
+                                    viewBox="0 0 52 52"
+                                >
+                                    <polygon
+                                        strokeWidth="3"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        fill="none"
+                                        points="29 13 14 29 25 29 23 39 38 23 27 23"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h6 className="mb-3 text-xl font-bold leading-5">
+                                A slice of heaven
+                            </h6>
+                            <p className="text-sm text-gray-900">
+                                A flower in my garden, a mystery in my panties. Heart attack
+                                never stopped old Big Bear.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className=' flex-2 info-content'>
-                <article className=' m-12'>
-                    <p className=' m-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus accusamus in rem voluptatibus! Debitis,
-                    </p>
-                    <p className=' m-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus accusamus in rem voluptatibus! Debitis,
-                    </p>
-                    <p className=' m-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus accusamus in rem voluptatibus! Debitis,
-                    </p>
-                    <p className=' m-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus accusamus in rem voluptatibus! Debitis,
-                    </p>
-                    <p className=' m-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus accusamus in rem voluptatibus! Debitis,
-                    </p>
-                </article>
-                <div className="container-2 text-center">
-                    <div className="circle c1">step 1 </div>
-                    <div className="circle c2">step 2 </div>
-                    <div className="circle c3">step 3 </div>
-                    <div className="circle c4">step 4 </div>
-                    <div className="circle c5">step 5 </div>/
-                </div>
-                <article className=' m-12'>
-                    <p className=' m-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus accusamus in rem voluptatibus! Debitis,
-                    </p>
-                    <p className=' m-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus accusamus in rem voluptatibus! Debitis,
-                    </p>
-                    <p className=' m-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus accusamus in rem voluptatibus! Debitis,
-                    </p>
-                    <p className=' m-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus accusamus in rem voluptatibus! Debitis,
-                    </p>
-                    <p className=' m-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus accusamus in rem voluptatibus! Debitis,
-                    </p>
-                </article>
-            </div>
-        </section>
+        </div>
     );
 }

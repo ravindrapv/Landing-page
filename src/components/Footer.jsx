@@ -74,9 +74,9 @@ export default function Footer() {
                                 </a>
                             </div>
                             <div className="flex flex-row items-center self-center justify-center flex-shrink-0 shadow-md lg:justify-end">
-                                <div className="flex flex-row m-4">
-                                    <input type="text" placeholder="example@email.com" />
-                                    <button type="button" className="btn-5 w-4/5">Subscribe</button>
+                                <div className="">
+                                    <input type="text" className=' text-blue-800' placeholder="example@email.com" />
+                                    <button type="button" className="btn-5 w-3/4 mt-4">Subscribe</button>
                                 </div>
                             </div>
                         </div>
