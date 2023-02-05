@@ -346,10 +346,17 @@ font-family: 'Outfit', sans-serif;
   background-color: #ffff;
 }
 .bg-about{
-  background: #1C2358; 
+background: -webkit-linear-gradient(40deg,
+      #F7872C,
+      #F45A27,
+      #F45A27 100%);
+      opacity: 1;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;opacity: 1;
+
 }
 .bg-clr{
-  color:#F6762A;
+  color:#1C2358;
 }
 
 .App {
@@ -418,6 +425,10 @@ font-family: 'Outfit', sans-serif;
 }
 .mr{
   margin-right: 10px;
+}
+
+.border-2px{
+  border: 1px solid black;
 }
 /* RESPONSİVE */
 
