@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div>
       <section className="dark:bg-gray-800 dark:text-gray-100 hero-bg">
-        <div className="container flex flex-col justify-center p-2 mx-auto sm:py-12 lg:py-2 lg:flex-row lg:justify-evenly">
+        <div className="container flex flex-col justify-center mx-auto sm:py-12 lg:py-2 lg:flex-row lg:justify-evenly">
           <div className="flex flex-col justify-center text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
             <h1 className=" text-xl font-extrabold leading-none sm:text-6xl text-blue-400 hero-text font-sans">
               BUILD <span className="hero-sub">GREAT</span> TECH TEAMS

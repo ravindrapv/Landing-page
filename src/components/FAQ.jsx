@@ -74,7 +74,7 @@ export default function FAQ() {
                     sx={{
                       fontWeight: "bold",
                       textTransform: "capitalize",
-                      color: "#1E3A8A",
+                      color: "#F6762A",
                     }}
                   />
                   <Tab
@@ -83,7 +83,7 @@ export default function FAQ() {
                     sx={{
                       fontWeight: "bold",
                       textTransform: "capitalize",
-                      color: "#1E3A8A",
+                      color: "#F6762A",
                     }}
                   />
                 </Tabs>

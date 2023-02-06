@@ -12,13 +12,13 @@ export default function NavBar() {
           />
         </Link>
         <div>
+          <button
+            className="text-orange-500 border border-orange-500 hover:bg-blue-900 hover:text-white active:bg-rose-600 font-bold capitalize text-sm px-6 py-3 rounded-full outline-none focus:outline-none mb-1 ease-linear transition-all duration-150 mr-8"
+            type="button"
+          >
+            Login
+          </button>
           <div className="dropdown dropdown-end dropdown-hover">
-            <button
-              className="text-orange-500 border border-orange-500 hover:bg-blue-900 hover:text-white active:bg-rose-600 font-bold capitalize text-sm px-6 py-3 rounded-full outline-none focus:outline-none mb-1 ease-linear transition-all duration-150 mr-8"
-              type="button"
-            >
-              Login
-            </button>
             <label tabIndex={0} className="btn bg-blue-900  rounded-full">
               <img className=" w-4 h-4" src="/images/Group 171.png" alt="" />
             </label>

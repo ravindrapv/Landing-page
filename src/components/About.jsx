@@ -7,13 +7,13 @@ export default function About() {
       <header id="about">
         <div className=" bg-about py-4  justify-center items-center h-full bg-blue-400">
           <div className=" my-8">
-            <h3 className="text-4xl tracking-widest text-blue-900 text-center">
+            <h3 className="text-4xl tracking-widest text-white text-center font-bold ">
               About us
             </h3>
             <div className="mt-2 text-center">
-              <span className="inline-block w-40 h-1 bg-blue-900 rounded-full" />
-              <span className="inline-block w-3 h-1 ml-1 bg-blue-900 rounded-full" />
-              <span className="inline-block w-1 h-1 ml-1 bg-blue-900 rounded-full" />
+              <span className="inline-block w-40 h-1 bg-white rounded-full" />
+              <span className="inline-block w-3 h-1 ml-1 bg-white rounded-full" />
+              <span className="inline-block w-1 h-1 ml-1 bg-white rounded-full" />
             </div>
           </div>
           <h1 className="mt-2 text-center text-3xl text-white font-semibold mb-5">

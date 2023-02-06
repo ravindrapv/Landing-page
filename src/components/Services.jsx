@@ -1,43 +1,79 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
+import React from "react";
 export default function Services() {
   return (
-    <div className=' flex justify-center items-center service-bg mx-8' id='Services'>
+    <div
+      className=" flex justify-center items-center service-bg px-8"
+      id="Services"
+    >
       <div className="py-16  from-green-50 to-cyan-100">
         <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
           <div className="mb-12 space-y-2 text-center">
-            <h2 className="text-2xl text-sky-400 md:text-4xl text-center">Our Services</h2>
+            <h2 className="text-2xl text-blue-900 md:text-4xl text-center">
+              Our Services
+            </h2>
             <div className="mt-2">
-              <span className="inline-block w-40 h-1 bg-sky-400 rounded-full" />
-              <span className="inline-block w-3 h-1 ml-1 bg-sky-400 rounded-full" />
-              <span className="inline-block w-1 h-1 ml-1 bg-sky-400 rounded-full" />
+              <span className="inline-block w-40 h-1 bg-blue-900 rounded-full" />
+              <span className="inline-block w-3 h-1 ml-1 bg-blue-900 rounded-full" />
+              <span className="inline-block w-1 h-1 ml-1 bg-blue-900 rounded-full" />
             </div>
-            <p className=" lg:w-9/12 lg:mx-auto font-bold text-3xl my-14 service-text">Ease the job application process and let you meet the best candidates in the shortest time</p>
+            <p className=" lg:w-9/12 lg:mx-auto font-bold text-3xl my-14 service-text">
+              Ease the job application process and let you meet the best
+              candidates in the shortest time
+            </p>
           </div>
           <div className="grid gap-12 lg:grid-cols-2">
             <div className="rounded-xl group sm:flex space-x-6 bg-w bg-opacity-50 shadow-xl hover:rounded-2xl p-4">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEbBRIqR4nd6YbxkJ6tiFISRboXPAePsW06X1sxx5ssCjZUHMyXAQ2Y8ArsSlwOs6Jpls&usqp=CAU" alt="art cover" loading="lazy" height="250" width='250' className=" h-56 object-top rounded-lg transition duration-500 group-hover:rounded-xl" />
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSDUoU4V4IQ_V5Q118TiM_7NsrK704fjbJw&usqp=CAU"
+                alt="art cover"
+                loading="lazy"
+                height="200"
+                width="250"
+                className=" h-56 object-top rounded-lg transition duration-500 group-hover:rounded-xl"
+              />
               <div className="sm:w-7/12 pl-0 p-5">
                 <div className="space-y-2">
                   <div className="space-y-4">
-                    <h4 className="text-2xl font-semibold text-cyan-900">For Business</h4>
-                    <p className="text-gray-600">Acquiring talent is not easy! We are glad to share a different tale here. With the right bandwidth of interviewers across multiple skills, finding your ideal candidate becomes easier and faster.</p>
+                    <h4 className="text-2xl font-semibold text-cyan-900">
+                      For Business
+                    </h4>
+                    <p className="text-gray-600">
+                      Acquiring talent is not easy! We are glad to share a
+                      different tale here. With the right bandwidth of
+                      interviewers across multiple skills, finding your ideal
+                      candidate becomes easier and faster. interviewers across
+                      candidate becomes easier and faster
+                    </p>
                   </div>
-                  <button className='btn-1'>For Business</button>
+                  <button className="btn-1">For Business</button>
                 </div>
               </div>
             </div>
             <div className="p-4 rounded-xl group sm:flex space-x-6 bg-w bg-opacity-50 shadow-xl hover:rounded-2xl">
-              <img src="https://www.aihr.com/wp-content/uploads/Interview-guide.jpg" alt="art cover" loading="lazy" height="250" width='250' className="h-56 rounded-lg transition duration-500 group-hover:rounded-xl" />
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDohzQdXqjSNAPx4OaXBarIuIoB_-JSyH4y3w8HxPGq75jnBdkLMHEr1dzKJ4upxk0X5g&usqp=CAU"
+                alt="art cover"
+                loading="lazy"
+                height="200"
+                width="250"
+                className="h-56 rounded-lg transition duration-500 group-hover:rounded-xl"
+              />
               <div className="sm:w-7/12 pl-0 p-5">
                 <div className="space-y-2">
                   <div className="space-y-4">
-                    <h4 className="text-2xl font-semibold text-cyan-900">For Interviewer</h4>
-                    <p className="text-gray-600">Hello interviewers! Are you wanna be interviewers expert ?Yes ,This is the right place to land.
-                      Earn a knowledge and money. Come join us, build a identity for yourself.
-                      Earn a knowledge and money. Come join us, build a identity for yourself</p>
+                    <h4 className="text-2xl font-semibold text-cyan-900">
+                      For Interviewer
+                    </h4>
+                    <p className="text-gray-600">
+                      Hello interviewers! Are you wanna be interviewers expert
+                      ?Yes ,This is the right place to land. Earn a knowledge
+                      and money. Come join us, build a identity for yourself.
+                      Earn a knowledge and money. Come join us, build a identity
+                      for yourself
+                    </p>
                   </div>
-                  <button className='btn-4'>For Interviewer</button>
+                  <button className="btn-4">For Interviewer</button>
                 </div>
               </div>
             </div>
@@ -65,5 +101,5 @@ export default function Services() {
         </div>
       </div> */}
     </div>
-  )
+  );
 }
