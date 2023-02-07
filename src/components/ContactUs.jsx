@@ -114,7 +114,7 @@ export default function ContactUs() {
           <div>
             <button
               type="submit"
-              className="w-full px-4 py-2 font-bold rounded shadow focus:outline-none focus:ring hover:ring focus:ring-opacity-50 dark:bg-sky-400 focus:ring-sky-400 hover:ring-sky-400 dark:text-gray-900 bg-orange-400"
+              className="w-full px-4 py-2 font-bold rounded shadow focus:outline-none focus:ring hover:ring focus:ring-opacity-50 dark:bg-sky-400 focus:ring-sky-400 hover:ring-sky-400 dark:text-gray-900 bg-orange-500"
             >
               Send
             </button>

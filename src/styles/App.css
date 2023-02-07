@@ -451,32 +451,159 @@ background: -webkit-linear-gradient(40deg,
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
 }
 
 .swiper {
   width: 100%;
-  height: 300px;
+  height: 450px;
   margin: 20px auto;
 }
 
 .append-buttons {
   text-align: center;
   margin-top: 20px;
+  background-color: orange;
 }
-
+.swiper-button-next{
+  background-color: #F6732A;
+  color: #ffff;
+  border-radius: 50%;
+  padding: 2rem;
+  font-size: 20px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 1rem;
+}
+.swiper-button-prev{
+  background-color: #F6732A;
+    color: #ffff;
+    border-radius: 50%;
+    padding: 2rem;
+    font-size: 20px;
+    margin-right: 10px;
+    text-align: center;
+}
+.swiper-button-prev::after{
+  color: #ffff;
+}
+.swiper-button-next::after {
+  color: #ffff;
+}
 .append-buttons button {
   display: inline-block;
   cursor: pointer;
-  border: 1px solid #007aff;
-  color: #007aff;
+  border: 1px solid #ffa600;
+  color: #ffae00;
   text-decoration: none;
   padding: 4px 10px;
   border-radius: 4px;
   margin: 0 10px;
   font-size: 13px;
+}
+
+.custom-btn-6 {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  outline: none;
+}
+
+.btn-6 {
+  background: linear-gradient(90deg, rgb(107, 77, 177) 0%, rgb(233, 90, 164) 100%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+.btn-6 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-6:before,
+.btn-6:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: rgb(246, 115, 42);
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, .9),
+    -4px -4px 5px 0px rgba(255, 255, 255, .9),
+    7px 7px 20px 0px rgba(0, 0, 0, .2),
+    4px 4px 5px 0px rgba(0, 0, 0, .3);
+  transition: all 0.3s ease;
+}
+
+.btn-6:before {
+  height: 0%;
+  width: 2px;
+}
+
+.btn-6:after {
+  width: 0%;
+  height: 2px;
+}
+
+.btn-6:hover {
+  color: blue;
+  background: transparent;
+}
+
+.btn-6:hover:before {
+  height: 100%;
+}
+
+.btn-6:hover:after {
+  width: 100%;
+}
+
+.btn-6 span:before,
+.btn-6 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: rgb(246, 115, 42);
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, .9),
+    -4px -4px 5px 0px rgba(255, 255, 255, .9),
+    7px 7px 20px 0px rgba(0, 0, 0, .2),
+    4px 4px 5px 0px rgba(0, 0, 0, .3);
+  transition: all 0.3s ease;
+}
+
+.btn-6 span:before {
+  width: 2px;
+  height: 0%;
+}
+
+.btn-6 span:after {
+  height: 2px;
+  width: 0%;
+}
+
+.btn-6 span:hover:before {
+  height: 100%;
+}
+
+.btn-6 span:hover:after {
+  width: 100%;
 }
 /* RESPONSİVE */
 

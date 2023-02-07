@@ -6,7 +6,7 @@ export default function Services() {
       className=" flex justify-center items-center service-bg px-8"
       id="Services"
     >
-      <div className="py-16  from-green-50 to-cyan-100">
+      <div className="py-16  from-green-50 to-blue-100">
         <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
           <div className="mb-12 space-y-2 text-center">
             <h2 className="text-2xl text-blue-900 md:text-4xl text-center">
@@ -35,7 +35,7 @@ export default function Services() {
               <div className="sm:w-7/12 pl-0 p-5">
                 <div className="space-y-2">
                   <div className="space-y-4">
-                    <h4 className="text-2xl font-semibold text-cyan-900">
+                    <h4 className="text-2xl font-semibold text-blue-900">
                       For Business
                     </h4>
                     <p className="text-gray-600">
@@ -46,7 +46,10 @@ export default function Services() {
                       candidate becomes easier and faster
                     </p>
                   </div>
-                  <button className="btn-1">For Business</button>
+
+                  <button class="custom-btn-6 btn-6">
+                    <span>For Business</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -62,7 +65,7 @@ export default function Services() {
               <div className="sm:w-7/12 pl-0 p-5">
                 <div className="space-y-2">
                   <div className="space-y-4">
-                    <h4 className="text-2xl font-semibold text-cyan-900">
+                    <h4 className="text-2xl font-semibold text-blue-900">
                       For Interviewer
                     </h4>
                     <p className="text-gray-600">
@@ -73,7 +76,9 @@ export default function Services() {
                       for yourself
                     </p>
                   </div>
-                  <button className="btn-4">For Interviewer</button>
+                  <button class="custom-btn-6 btn-6">
+                    <span>For Interviewer</span>
+                  </button>
                 </div>
               </div>
             </div>
