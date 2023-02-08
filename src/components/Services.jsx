@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { NavLink } from "react-router-dom";
 export default function Services() {
   return (
     <div
@@ -23,44 +24,45 @@ export default function Services() {
             </p>
           </div>
           <div className="grid gap-12 lg:grid-cols-2">
-            <div className="rounded-xl group sm:flex space-x-6 bg-w bg-opacity-50 shadow-xl hover:rounded-2xl p-4">
+            <div className="rounded-xl group sm:flex space-x-6 bg-w bg-opacity-50 shadow-xl hover:rounded-2xl p-4 justify-between">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSDUoU4V4IQ_V5Q118TiM_7NsrK704fjbJw&usqp=CAU"
                 alt="art cover"
                 loading="lazy"
-                height="200"
-                width="250"
-                className=" h-56 object-top rounded-lg transition duration-500 group-hover:rounded-xl"
+                height="100"
+                width="200"
+                className=" h-56 mt-6 object-top rounded-lg transition duration-500 group-hover:rounded-xl"
               />
               <div className="sm:w-7/12 pl-0 p-5">
                 <div className="space-y-2">
                   <div className="space-y-4">
-                    <h4 className="text-2xl font-semibold text-blue-900">
+                    <h4 className="text-2xl font-bold text-blue-900">
                       For Business
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 mb-4">
                       Acquiring talent is not easy! We are glad to share a
                       different tale here. With the right bandwidth of
                       interviewers across multiple skills, finding your ideal
                       candidate becomes easier and faster. interviewers across
-                      candidate becomes easier and faster
+                      faster ,finding your ideal finding your ideal
                     </p>
                   </div>
-
-                  <button class="custom-btn-6 btn-6">
-                    <span>For Business</span>
-                  </button>
+                  <NavLink to="/Interview">
+                    <button class=" btn-6">
+                      <span>Learn More</span>
+                    </button>
+                  </NavLink>
                 </div>
               </div>
             </div>
-            <div className="p-4 rounded-xl group sm:flex space-x-6 bg-w bg-opacity-50 shadow-xl hover:rounded-2xl">
+            <div className="p-4 rounded-xl group sm:flex space-x-6 bg-w bg-opacity-50 shadow-xl hover:rounded-2xl justify-between">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDohzQdXqjSNAPx4OaXBarIuIoB_-JSyH4y3w8HxPGq75jnBdkLMHEr1dzKJ4upxk0X5g&usqp=CAU"
                 alt="art cover"
                 loading="lazy"
-                height="200"
-                width="250"
-                className="h-56 rounded-lg transition duration-500 group-hover:rounded-xl"
+                height="100"
+                width="200"
+                className="h-56 mt-6 rounded-lg transition duration-500 group-hover:rounded-xl"
               />
               <div className="sm:w-7/12 pl-0 p-5">
                 <div className="space-y-2">
@@ -76,9 +78,11 @@ export default function Services() {
                       for yourself
                     </p>
                   </div>
-                  <button class="custom-btn-6 btn-6">
-                    <span>For Interviewer</span>
-                  </button>
+                  <NavLink to="/Interview">
+                    <button class=" btn-6">
+                      <span>Learn More</span>
+                    </button>
+                  </NavLink>
                 </div>
               </div>
             </div>

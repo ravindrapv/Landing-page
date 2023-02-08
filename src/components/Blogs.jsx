@@ -34,10 +34,12 @@ export default function Blogs() {
             <Swiper
               onSwiper={setSwiperRef}
               slidesPerView={3}
+              loopedSlides={2}
+              loop={true}
               centeredSlides={true}
               spaceBetween={30}
               pagination={{
-                type: "",
+                type: "el: '.swiper-pagination'",
               }}
               navigation={true}
               modules={[Pagination, Navigation]}
@@ -56,7 +58,7 @@ export default function Blogs() {
                     <div>
                       <span
                         className="
-                     bg-primary
+                      bg-blue-900
                      rounded
                                                         inline-block
                                                         text-center
@@ -110,7 +112,7 @@ export default function Blogs() {
                     <div>
                       <span
                         className="
-               bg-primary
+                bg-blue-900
                rounded
                inline-block
                text-center
@@ -164,7 +166,7 @@ export default function Blogs() {
                     <div>
                       <span
                         className="
-               bg-primary
+                bg-blue-900
                rounded
                inline-block
                text-center
@@ -217,7 +219,7 @@ export default function Blogs() {
                     <div>
                       <span
                         className="
-               bg-primary
+                bg-blue-900
                rounded
                inline-block
                text-center

@@ -33,15 +33,17 @@ export default function Testimonials() {
             onSwiper={setSwiperRef}
             slidesPerView={2}
             centeredSlides={true}
+            loopedSlides={4}
+            loop={true}
             spaceBetween={30}
             pagination={{
-              type: "",
+              type: "el: '.swiper-pagination'",
             }}
             navigation={true}
             modules={[Pagination, Navigation]}
             className="mySwiper"
           >
-            <SwiperSlide className="container flex flex-col items-center justify-center mx-auto lg:flex-row lg:flex-wrap lg:justify-evenly lg:px-2 h-fit">
+            <SwiperSlide className="container flex flex-col items-center justify-center mx-auto lg:flex-row lg:flex-wrap lg:justify-evenly lg:px-2 h-fit image-w">
               <div>
                 <div>
                   <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-900">

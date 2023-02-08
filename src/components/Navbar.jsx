@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom";
 export default function NavBar() {
   return (
     <nav className="p-3 pt-8 hero-bg">
