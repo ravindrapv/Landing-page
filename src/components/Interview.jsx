@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { Link } from "react-router-dom";
+import Whychoose from "./Whychoose";
 export default function Interview() {
   return (
     <div>
@@ -101,6 +102,7 @@ export default function Interview() {
           </div>
         </div>
       </section>
+      <Whychoose />
     </div>
   );
 }
