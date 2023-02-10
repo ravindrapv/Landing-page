@@ -31,7 +31,7 @@ export default function Services() {
                 loading="lazy"
                 height="100"
                 width="200"
-                className=" h-56 mt-6 object-top rounded-lg transition duration-500 group-hover:rounded-xl"
+                className=" object-cover h-56 mt-6 object-top rounded-lg transition duration-500 group-hover:rounded-xl"
               />
               <div className="sm:w-7/12 pl-0 p-5">
                 <div className="space-y-2">
@@ -62,7 +62,7 @@ export default function Services() {
                 loading="lazy"
                 height="100"
                 width="200"
-                className="h-56 mt-6 rounded-lg transition duration-500 group-hover:rounded-xl"
+                className=" object-cover h-56 mt-6 rounded-lg transition duration-500 group-hover:rounded-xl"
               />
               <div className="sm:w-7/12 pl-0 p-5">
                 <div className="space-y-2">

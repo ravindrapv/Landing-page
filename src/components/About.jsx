@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section>
       <header id="about">
-        <div className=" bg-about py-4  justify-center items-center h-full bg-blue-400">
+        <div className=" bg-about py-4  justify-center items-center h-full bg-blue-400 small-screen">
           <div className=" my-8">
             <h3 className="text-4xl tracking-widest text-white text-center font-bold ">
               About us

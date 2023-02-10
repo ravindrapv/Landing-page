@@ -33,7 +33,10 @@ export default function Blogs() {
           <div className="flex flex-wrap -mx-4">
             <Swiper
               onSwiper={setSwiperRef}
-              slidesPerView={3}
+              breakpoints={{
+                600: { slidesPerView: 3 },
+              }}
+              slidesPerView={1}
               loopedSlides={2}
               loop={true}
               centeredSlides={true}

@@ -547,8 +547,131 @@ background: -webkit-linear-gradient(40deg,
 .center{
   text-align: center;
 }
-                                
+/* 
+colors of CLIQHR */
 
+.bg-pink{
+  background-color: #FF5DA1;
+}
+
+.bg-orange{
+  background-color: #FF771B;
+}
+
+.bg-blue{
+  background-color: #344CB6;
+}
+.bg-dark-blue{
+  background-color: #211572;
+}
+
+/* process flow card with responsive   */
+.container-3 {
+  display: flex;
+}
+
+.container-3 .card {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container-3 .card .title {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 15px;
+  padding-bottom: 60px;
+  color: #ffffff;
+}
+
+.container-3 .card .circle {
+  box-sizing: border-box;
+  font-size: 35px;
+  font-weight: bold;
+  background-color: #000000;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -60px auto 0px auto;
+  z-index: 2;
+  position: relative;
+  box-shadow: inset 0px -10px 8px -8px rgba(0, 0, 0, 0.5);
+}
+
+.container-3 .card .content {
+  padding: 15px;
+  padding-top: 45px;
+  margin-top: -45px;
+  background-color: #ffffff;
+  box-shadow: 0px -4px 5px rgba(0, 0, 0, 0.15);
+}
+
+.container-3 .card .icon {
+  font-size: 50px;
+}
+
+.container-3 .card:nth-child(1) .title,
+.container-3 .card:nth-child(1) .circle {
+  background-color: #FF771B;
+}
+
+.container-3 .card:nth-child(1) .icon {
+  color: #FF771B;
+}
+
+.container-3 .card:nth-child(2) .title,
+.container-3 .card:nth-child(2) .circle {
+  background-color: #344CB6;
+}
+
+.container-3 .card:nth-child(2) .icon {
+  color: #344CB6;
+}
+
+.container-3 .card:nth-child(3) .title,
+.container-3 .card:nth-child(3) .circle {
+  background-color: #FF5DA1;
+}
+
+.container-3 .card:nth-child(3) .icon {
+  color: #FF5DA1;
+}
+
+.container-3 .card:nth-child(4) .title,
+.container-3 .card:nth-child(4) .circle {
+  background-color: #FF771B;
+}
+
+.container-3 .card:nth-child(4) .icon {
+  color: #FF771B;
+}
+
+.container-3 .card:nth-child(5) .title,
+.container-3 .card:nth-child(5) .circle {
+  background-color: #211572;
+}
+
+.container-3 .card:nth-child(5) .icon {
+  color: #211572;
+}
+
+@media (max-width: 767px) {
+  .container-3 {
+    flex-wrap: wrap;
+  }
+
+  .container-3 .card {
+    flex: 0 0 100%;
+  }
+}
 /* RESPONSİVE */
 
 @media only screen and (max-width: 800px) {
@@ -578,11 +701,31 @@ background: -webkit-linear-gradient(40deg,
    
   }
   .hero-img {
-    height: 250px;
-    width: 250px;
+    display: none;
+  }
+  .small-w-t{
+    width: 400px;
+  }
+.small-screen{
+  padding: 1rem;
+  text-align: center;
+}
+.small-scr-btn{
+  width: 150px;
+    height: 60px;
+    font-size: 1rem;
+}
+
+  .btn-4{
+    width: 150px;
+    height: 60px;
+    font-size: 1rem;
   }
 .sm-mt{
   margin-top: 10rem;
+}
+footer{
+  background-color: #F45927;
 }
 }
 

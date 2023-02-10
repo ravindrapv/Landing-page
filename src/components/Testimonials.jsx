@@ -31,7 +31,10 @@ export default function Testimonials() {
         <div className="flex flex-wrap -mx-4">
           <Swiper
             onSwiper={setSwiperRef}
-            slidesPerView={2}
+            breakpoints={{
+              600: { slidesPerView: 2 },
+            }}
+            slidesPerView={1}
             centeredSlides={true}
             loopedSlides={4}
             loop={true}
@@ -46,7 +49,7 @@ export default function Testimonials() {
             <SwiperSlide className="container flex flex-col items-center justify-center mx-auto lg:flex-row lg:flex-wrap lg:justify-evenly lg:px-2 h-fit image-w">
               <div>
                 <div>
-                  <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-900">
+                  <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-900  ">
                     <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-100">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +91,7 @@ export default function Testimonials() {
             <SwiperSlide className="container flex flex-col items-center justify-center mx-auto lg:flex-row lg:flex-wrap lg:justify-evenly lg:px-2 h-fit">
               <div>
                 <div>
-                  <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-900">
+                  <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-900 ">
                     <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-100">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -130,7 +133,7 @@ export default function Testimonials() {
             <SwiperSlide className="container flex flex-col items-center justify-center mx-auto lg:flex-row lg:flex-wrap lg:justify-evenly lg:px-2 h-fit">
               <div>
                 <div>
-                  <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-900">
+                  <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-900 ">
                     <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-100">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -172,7 +175,7 @@ export default function Testimonials() {
             <SwiperSlide className="container flex flex-col items-center justify-center mx-auto lg:flex-row lg:flex-wrap lg:justify-evenly lg:px-2 h-fit">
               <div>
                 <div>
-                  <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-900">
+                  <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-900 ">
                     <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-100">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

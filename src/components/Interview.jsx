@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { Link } from "react-router-dom";
-import Whychoose from "./Whychoose";
 export default function Interview() {
   return (
     <div>
@@ -52,7 +51,7 @@ export default function Interview() {
                     Technical Screening Interview
                   </span>
                 </h1>
-                <span className="center">
+                <span className="center mt-8">
                   {/* The button to open modal */}
                   <label htmlFor="my-modal-3" className="btn-33">
                     <img src="/images/play-button.svg" width={30} alt="" />
@@ -102,7 +101,6 @@ export default function Interview() {
           </div>
         </div>
       </section>
-      <Whychoose />
     </div>
   );
 }

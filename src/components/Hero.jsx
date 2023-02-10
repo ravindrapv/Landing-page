@@ -4,7 +4,7 @@ import React from "react";
 export default function Hero() {
   return (
     <div>
-      <section className="dark:bg-gray-800 dark:text-gray-100 hero-bg">
+      <section className="dark:bg-gray-800 dark:text-gray-100 hero-bg small-screen">
         <div className="container flex flex-col justify-center mx-auto sm:py-12 lg:py-2 lg:flex-row lg:justify-evenly">
           <div className="flex flex-col justify-center text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
             <h1 className=" text-xl font-extrabold leading-none sm:text-6xl text-blue-400 hero-text font-sans">
@@ -18,7 +18,7 @@ export default function Hero() {
             <div className=" flex gap-8">
               <button className="btn-4 font-bold">Request Demo</button>
               <button
-                className="text-pink-500 border border-orange-500 hover:bg-orange-500 hover:text-white active:bg-rose-600 font-bold capitalize text-sm px-6 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                className="text-pink-500 border border-orange-500 hover:bg-orange-500 hover:text-white active:bg-orange-500 font-bold capitalize text-sm px-6 py-5 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 small-scr-btn"
                 type="button"
               >
                 Become an Interviewer

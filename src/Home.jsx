@@ -1,7 +1,7 @@
 import React from "react";
-import App from "./App";
+import App from "./components/App";
 import { Route, Switch } from "react-router-dom";
-import Interview from "./Interview";
+import InterviwePanel from "./Pages/InterviwePanel";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
           <App />
         </Route>
         <Route path="/Interview">
-          <Interview />
+          <InterviwePanel />
         </Route>
       </Switch>
     </>
